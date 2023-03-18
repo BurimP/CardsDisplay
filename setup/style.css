@@ -88,13 +88,6 @@ input[type="radio"] {
 
 /* Modifications from here and below */
 
-.card-container {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px; */
-}
-
 .cards {
   display: flex;
   flex-direction: row;
