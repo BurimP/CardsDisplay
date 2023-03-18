@@ -1,0 +1,175 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #ffffff;
+  margin: 15px;
+  width: 340px;
+}
+
+.preview {
+  background: #f9fafd;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.layout-placeholder {
+  color: #464b5b;
+  font-size: 18px;
+}
+
+.accordion {
+  background: #e6ebff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.accordion-title {
+  color: #0033ff;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.form-control {
+  background-color: #ffffff;
+  border: 1px solid #d6dae4;
+  border-radius: 3px;
+  padding: 6px 12px;
+  height: 38px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.radio-select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* Modifications from here and below */
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cards {
+  display: flex;
+}
+
+.card {
+  border: solid 1px rgb(216, 215, 215);
+  padding: 15px;
+  width: min-content;
+}
+
+.image {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.main-img {
+  height: 400px;
+  width: 400px;
+}
+
+.heart {
+  height: 20px;
+  width: 20px;
+}
+
+.upper-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pic-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 0;
+}
+
+.name-date {
+  margin-left: 0;
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.date {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+.icon-img {
+  width: auto;
+}
+
+.middle-section {
+  color: grey;
+}
+
+.lower-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.likes {
+  margin-top: 0;
+  margin-left: 2%;
+}
