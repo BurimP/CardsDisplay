@@ -58,7 +58,7 @@ async function loadCards(start, end) {
             ${card.caption}
           </p>
         </div>
-
+        <hr>
         <div class="lower-section">
           <img src="../icons/heart.svg" alt="" class="heart"/>
           <p class="likes">${parseInt(card.likes)}</p>
@@ -74,16 +74,8 @@ async function loadCards(start, end) {
   }
 
   const likesElements = document.querySelectorAll(".likes");
-  console.log(likesElements);
 
   const heartIcons = document.querySelectorAll(".heart");
-  console.log(heartIcons);
-
-  if (likesElements.length !== heartIcons.length) {
-    console.error(
-      "Number of likes elements does not match number of heart icons"
-    );
-  }
 
   for (let i = 0; i < heartIcons.length; i++) {
     let like = parseInt(likesElements[i].textContent);
@@ -134,6 +126,9 @@ async function loadCards(start, end) {
       const newColor = event.target.value;
       for (let i = 0; i < cardSelectors.length; i++) {
         cardSelectors[i].style.backgroundColor = newColor;
+        if (newColor == "#" || "") {
+          cardSelectors[i].style.backgroundColor = "white";
+        }
       }
     });
   };
