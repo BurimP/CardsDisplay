@@ -89,20 +89,33 @@ input[type="radio"] {
 /* Modifications from here and below */
 
 .card-container {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 10px; */
 }
 
 .cards {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .card {
   border: solid 1px rgb(216, 215, 215);
   padding: 15px;
   width: min-content;
+}
+
+.dark {
+  border: solid 1px rgb(216, 215, 215);
+  padding: 15px;
+  width: min-content;
+  background-color: black;
+  color: white;
 }
 
 .image {
@@ -125,6 +138,7 @@ input[type="radio"] {
 .heart {
   height: 20px;
   width: 20px;
+  cursor: pointer;
 }
 
 .upper-section {
@@ -138,6 +152,7 @@ input[type="radio"] {
   flex-direction: row;
   justify-content: space-between;
   margin-right: 0;
+  margin-bottom: 5px;
 }
 
 .name-date {
@@ -160,10 +175,6 @@ input[type="radio"] {
   width: auto;
 }
 
-.middle-section {
-  color: grey;
-}
-
 .lower-section {
   display: flex;
   flex-direction: row;
@@ -172,4 +183,24 @@ input[type="radio"] {
 .likes {
   margin-top: 0;
   margin-left: 2%;
+}
+
+.load-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 100;
+  font-size: 1.1rem;
+  background-color: rgb(59, 124, 255);
+  border: none;
+  margin-bottom: 70px;
+  margin-top: 30px;
+  cursor: pointer;
 }

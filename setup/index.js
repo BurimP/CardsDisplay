@@ -103,3 +103,11 @@ function loadCards(start, end) {
       }
     });
 }
+
+const darkTheme = document.getElementById("darkTheme");
+
+const cardSelector = document.querySelectorAll(".card");
+
+darkTheme.addEventListener("click", () => {
+  cardSelector.classList.add("dark");
+});
